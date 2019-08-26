@@ -15,6 +15,7 @@ exports.create = (req, res) => {
       direccion : req.body.direccion,
       fechaExpiracion : req.body.fechaExpiracion,
       fechaDespacho : req.body.fechaDespacho,
+      materiales : req.body.materiales,
       tipo : req.body.tipo,
 
     });
@@ -78,6 +79,7 @@ exports.update = (req, res) => {
       direccion : req.body.direccion,
       fechaExpiracion : req.body.fechaExpiracion,
       fechaDespacho : req.body.fechaDespacho,
+      materiales : req.body.materiales,
       tipo : req.body.tipo,
 
     }, {new: true})

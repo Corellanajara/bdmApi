@@ -22,6 +22,7 @@ const mongoose = require('mongoose');
 
 require('./usuario/usuario.routes.js')(app);
 require('./oferta/oferta.routes.js')(app);
+require('./solicitud/solicitud.routes.js')(app);
 mongoose.Promise = global.Promise;
 
 mongoose.connect(config.url, {
